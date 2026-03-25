@@ -22,11 +22,17 @@ Network option for both these virtual machines was set to internal network in Vi
 ### Skills Learned
 
 -Simulating attacks using Metasploit and Meterpreter reverse TCP payloads
+
 -Hosting and delivering payloads using a Python HTTP server
+
 -Collecting endpoint telemetry using Sysmon
+
 -Ingesting and analyzing logs in Splunk
+
 -Investigating suspicious activity using queries
+
 -Tracing attacker commands executed through a reverse shell
+
 -Understanding the SOC workflow from attack simulation to detection and investigation
 
 ### Tools Used
@@ -255,9 +261,27 @@ Then type in the command `exploit` to start the reverse TCP handler.
 **Here we can see the three commands the attacker executed in the windows machine through the shell.**
 
 ### Conclusion
+When a SOC analyst notices such an activity within the environment he will take necessary actions to mitigate the risk also escalate the issue to  the next tier if necessary.
+He also can write appropriate detection rules to create an alert for such future events for faster detection. 
 
+### Possible Improvements
 
+Future improvements to this lab could include:
 
+Creating Splunk detection queries
 
+Building Splunk dashboards for suspicious activity
 
+Adding Sigma detection rules
+
+Expanding the lab with additional attack techniques
+
+Integrating network monitoring tools such as Zeek or Suricata
+
+### Disclaimer
+
+This project was conducted in a controlled lab environment for educational purposes only.
+
+### Experience
+This is the first project that I have really documented in a public space like github. There was a lot of issues that I came across while doingg the work and also when documenting it. But this will be the first of the many projects that I wil be doing and showcasing here. It was all round a great experience and I will comeback for more and keep building my skills as a SOC analyst. 
 
